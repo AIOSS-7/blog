@@ -15,20 +15,8 @@ Your contributing can be divided 2 categories:
 
 If you finish implementing a feature or bugfix, please send a pull request to https://github.com/pytorch/pytorch
 
-## GRU_cell 의 기능 및 사용 시나리오
-class GRUCell(RNNCellBase):
-    r"""A gated recurrent unit (GRU) cell
-
-    .. math::
-
-        \begin{array}{ll}
-        r = \sigma(W_{ir} x + b_{ir} + W_{hr} h + b_{hr}) \\
-        z = \sigma(W_{iz} x + b_{iz} + W_{hz} h + b_{hz}) \\
-        n = \tanh(W_{in} x + b_{in} + r * (W_{hn} h + b_{hn})) \\
-        h' = (1 - z) * n + z * h
-        \end{array}
-
-    where :math:`\sigma` is the sigmoid function.
+## "GRU_cell" Class 의 기능 및 사용 시나리오
+    A gated recurrent unit (GRU) cell
 
     Args:
         input_size: The number of expected features in the input x
