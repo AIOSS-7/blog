@@ -63,5 +63,3 @@ class GRUCell(RNNCellBase):
         ...     hx = rnn(input[i], hx)
         ...     output.append(hx)
     """
- 
->>>>>>> cbc0eac8d211b51738c61da619c43695eb8b93ec
